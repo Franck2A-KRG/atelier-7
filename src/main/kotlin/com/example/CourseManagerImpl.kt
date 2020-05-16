@@ -1,13 +1,17 @@
 package com.example
 
 import java.time.LocalDate
-import javax.inject.Singleton
 
-@Singleton
-class CourseManagerImpl : CourseManager {
+// CourseManagerImpl implements CourseManager
+// It's a Singleton
+// It implements random method
+// The random method pick randomly one course in a predefined list
 
-    companion object {
-        val COURSES = listOf(
+?
+? CourseManagerImpl ? ? {
+
+    ? ? {
+        val COURSES = ?(
                 Course("Atelier #1 Index sur MySQL, MongoDB et InfluxDB", "Franck", LocalDate.of(2020, 2, 17)),
                 Course("Atelier #2 Agrégation en MongoDB", "Alexandre", LocalDate.of(2020, 3, 9)),
                 Course("Atelier #3 ReactiveX", "Gautier", LocalDate.of(2020, 3, 30)),
@@ -17,7 +21,7 @@ class CourseManagerImpl : CourseManager {
         )
     }
 
-    override fun random(): Course {
-        return COURSES.random()
+    ? ? random(): Course {
+        return COURSES.?()
     }
 }

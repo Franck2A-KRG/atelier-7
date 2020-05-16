@@ -1,6 +1,9 @@
 package com.example
 
-interface CourseManager {
+// courseManager is an interface
+// it has only one method random which return a Course
 
-    fun random(): Course
+? CourseManager {
+
+    ? random(): ?
 }

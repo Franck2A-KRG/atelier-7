@@ -1,13 +1,14 @@
 package com.example
 
-import io.micronaut.http.annotation.Controller
-import io.micronaut.http.annotation.Get
+// CourseController is a controller
+// It uses courseManager
+// It has only 1 method on GET /courses/random which call random method in courseManager class
 
-@Controller("/courses")
-class CourseController(private val courseManager: CourseManager) {
+?
+class CourseController(?) {
 
-    @Get("/random")
-    fun randomCourse(): Course {
-        return courseManager.random()
+    ?
+    fun random(): Course {
+        return ?.random()
     }
 }

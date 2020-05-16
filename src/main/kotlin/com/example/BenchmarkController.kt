@@ -1,20 +1,22 @@
 package com.example
 
-import io.micronaut.http.annotation.Controller
-import io.micronaut.http.annotation.Get
-import java.util.*
-import kotlin.math.sin
+// BenchmarkController is a controller
+// It has only 1 method benchmark accessible on GET /benchmark
 
-@Controller("/benchmark")
+?
 class BenchmarkController {
 
-    @Get
+    ?
     fun benchmark(): Double {
-        var result: Double = Random().nextDouble()
+        // generate first value with Java Random implementation
+        var result: Double = ?
 
-        for (x in 0 until 500_000) {
-            result = sin(result)
-            println("sin($x): $result")
+        // loop from 0 to 1_000_000
+        // calculate sin from previous result
+        // and println result
+        for (?) {
+            result = ?
+            println(?)
         }
 
         return result

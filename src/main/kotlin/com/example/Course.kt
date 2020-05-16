@@ -1,7 +1,8 @@
 package com.example
 
 import io.micronaut.core.annotation.Introspected
-import java.time.LocalDate
+
+// course is a data class defined by name (string), author (string) and date (localdate)
 
 @Introspected
-data class Course(val name: String, val author: String, val date: LocalDate)
+? class Course(?)
